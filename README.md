@@ -2,6 +2,7 @@
 The Number Guessing Game is a simple interactive game where the player tries to guess a randomly generated number within a specified range. The program prompts the player to enter their guess and provides feedback based on whether the guess is too low or too high. The game continues until the player correctly guesses the number or decides to quit.
 
 ## Features
+- User can choose the game's difficulty.
 - Randomly generates a number within a specified range for each game.
 - Accepts user input to guess the number.
 - Provides feedback to the player on whether their guess is too low or too high.
@@ -19,7 +20,7 @@ To play the game, run the program and follow the on-screen instructions. The gam
 ## Modifications
 The code can be modified to incorporate additional features, such as:
 
-- Implementing a limit on the number of attempts.
+~~- Implementing a limit on the number of attempts.~~
 - Allowing the player to set custom ranges for the random numbers.
 - Adding a scoring system to track the player's performance.
 - Enhancing the user interface with graphics or sound effects.
