@@ -20,7 +20,7 @@ To play the game, run the program and follow the on-screen instructions. The gam
 ## Modifications
 The code can be modified to incorporate additional features, such as:
 
-~~- Implementing a limit on the number of attempts.~~
+- ~~Implementing a limit on the number of attempts.~~
 - Allowing the player to set custom ranges for the random numbers.
 - Adding a scoring system to track the player's performance.
 - Enhancing the user interface with graphics or sound effects.
