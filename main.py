@@ -1,6 +1,6 @@
 import random
 
-def getValidGuess(low, high):
+def get_valid_guess(low, high):
     """
     Validates and retrieves a user's guess within the specified range.
 
@@ -22,13 +22,13 @@ def getValidGuess(low, high):
             user_guess = int(user_guess)
             if low <= user_guess <= high:
                 return user_guess
-            else:
-                print(f'Você deve digitar um número entre {low} e {high}.')
+            print(f'Você deve digitar um número entre {low} e {high}.')
+
         except ValueError:
             print("Entrada inválida. Digite um número válido.")
 
 
-def guessNumber(low=1, high=100, random_numbers=[], max_attempts=10):
+def guess_number(low=1, high=100, random_numbers=[], max_attempts=10):
     """
     Plays a number guessing game where the user tries to guess a randomly generated number.
 
@@ -59,7 +59,7 @@ def guessNumber(low=1, high=100, random_numbers=[], max_attempts=10):
         max_attempts = 5
 
     while attempts < max_attempts:
-        user_guess = getValidGuess(low, high)
+        user_guess = get_valid_guess(low, high)
         
         if user_guess is None:
             return None
@@ -85,17 +85,15 @@ def main():
     Entry point of the program. Plays the number guessing game.
 
     """
-
     random_numbers = []
-    
+
     while True:
-        result = guessNumber(random_numbers=random_numbers)
+        result = guess_number(random_numbers=random_numbers)
 
         if result is None:
             print(f'Lista de números gerados: {random_numbers}')
             break
     
-
 if __name__ == '__main__':
     main()
 
