@@ -28,7 +28,7 @@ def getValidGuess(low, high):
             print("Entrada inválida. Digite um número válido.")
 
 
-def guessNumber(low=1, high=10, random_numbers=[]):
+def guessNumber(low=1, high=10, random_numbers=[], max_attempts=3):
     """
     Plays a number guessing game where the user tries to guess a randomly generated number.
 
@@ -42,12 +42,15 @@ def guessNumber(low=1, high=10, random_numbers=[]):
 
     """
     random_number = random.randint(low, high)
-    
-    while True:
+    attempts = 0
+
+    while attempts < max_attempts:
         user_guess = getValidGuess(low, high)
         
         if user_guess is None:
             return None
+
+        attempts += 1
 
         if user_guess < random_number:
             print("Você chutou um número baixo. Tente de novo.")
@@ -56,6 +59,9 @@ def guessNumber(low=1, high=10, random_numbers=[]):
         else:
             print("Parabéns, você acertou o número.")
             break
+
+    if attempts == max_attempts:
+        print(f'Limite de tentativas atingido. O número secreto era {random_number}. ')
 
     random_numbers.append(random_number)
     return random_number
