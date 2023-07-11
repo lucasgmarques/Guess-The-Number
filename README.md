@@ -24,4 +24,4 @@ The code can be modified to incorporate additional features, such as:
 - Adding a scoring system to track the player's performance.
 - Enhancing the user interface with graphics or sound effects.
 
-Feel free to explore and extend the code to create an even more engaging number guessing game experience. Guess-The-Number
+Feel free to explore and extend the code to create an even more engaging number guessing game experience. 
